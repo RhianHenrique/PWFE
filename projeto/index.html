@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <title>Gerenciador de notas</title>
+</head>
+<body>
+    <!--
+        @author Victor Hugo
+        @author Rhian
+        @author José
+        @author Pedro
+    -->
+    <form id="student-form" action="#">
+        <h1>Atividade Avaliativa</h1>
+        <div>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <div>
+            <label for="cpf">CPF do Aluno (999.999.999-99):</label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="999.999.999-99" required>
+        </div>
+
+        <div>
+            <label for="matricula">Matrícula do Aluno (7 dígitos numéricos):</label>
+            <input type="text" id="matricula" name="matricula" pattern="\d{7}" required>
+        </div>
+
+        <div>
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome" pattern="[A-Za-z]" required>
+        </div>
+
+        <div>
+            <label for="numero">Número do Aluno:</label>
+            <input type="number" id="numero" name="numero" required>
+        </div>
+
+        <div>
+            <label for="disciplina">Disciplina:</label>
+            <input type="text" id="disciplina" name="disciplina" pattern="[A-Za-z]" required> 
+        </div>
+
+        <div>
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma" name="turma" pattern="[A-Za-z0-9]" required>
+        </div>
+
+        <div>
+            <label for="nota1">Nota Prova 1:</label> 
+            <input type="number" id="nota1" name="nota1">
+        </div>
+        <div>
+            <label for="nota2">Nota Prova 2:</label>
+            <input type="number" id="nota2" name="nota2">
+        </div>
+        <div>
+            <label for="nota3">Nota Prova 3:</label>
+            <input type="number" id="nota3" name="nota3"> 
+        </div>
+        
+        <div>
+            <label for="nota-trabalho1">Nota Trabalho 1:</label> 
+            <input type="number" id="nota-trabalho1" name="nota-trabalho1">
+        </div>
+
+        <div>
+            <label for="nota-trabalho2">Nota Trabalho 2:</label> 
+            <input type="number" id="nota-trabalho2" name="nota-trabalho2">
+        </div>
+
+        <div>
+            <label for="nota-trabalho3">Nota Trabalho 3:</label> 
+            <input type="number" id="nota-trabalho3" name="nota-trabalho3">
+        </div>
+
+
+        <button type="submit">Registrar</button>
+            
+    </form>
+    <div id="resultado">
+
+    </div>
+</body>
+</html>

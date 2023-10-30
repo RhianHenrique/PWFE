@@ -1,0 +1,38 @@
+/*
+    @author Victor Hugo
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+}
+
+.resultado {
+    width: 400px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+}
