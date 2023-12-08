@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body ng-app="MyApplication">
+    <div ng-controller="MyController">
+        <h3>Calculadora</h3>
+
+        <label for="num1">Digite um numero:</label>
+        <input id="num1" type="text" ng-model="num1">
+
+        <label for="num2">Digite um numero:</label>
+        <input id="num2" type="text" ng-model="num2" ng-disabled="desabilitarNum2">
+
+        <button ng-click="btnCalculo('+')">+</button>
+        <button ng-click="btnCalculo('-')">-</button>
+        <button ng-click="btnCalculo('X')">X</button>
+        <button ng-click="btnCalculo('/')">:</button>
+        <button ng-click="btnCalculo('Raiz')">Raiz</button>
+        <button ng-click="btnCalculo('Exp')">EXP</button>
+
+        <div ng-show="informacoesExibidas">
+            <p>Resultado: {{resultado}}</p>
+        </div> 
+
+    </div>
+    
+</body>
+</html>
